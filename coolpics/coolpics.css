@@ -16,7 +16,6 @@ body {
     padding: 0;
 }
 
-/* Header styles */
 header {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -114,10 +113,10 @@ nav a:hover {
 }
 
 nav a {
-    font-family: 'Mooli', sans-serif; /* Mooli font for nav links */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.2em; /* Adjust size */
-    color: var(white); /* Use your custom color */
+    font-family: 'Mooli', sans-serif; 
+    text-decoration: none; 
+    font-size: 1.2em; 
+    color: var(white);
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
