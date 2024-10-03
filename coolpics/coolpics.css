@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #f0f0f0;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Mooli', sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Mooli', sans-serif; 
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    color: var(--accent-color);
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+}
+
+img:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Mooli', sans-serif;
+}
+
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+nav li {
+    margin: 0 15px; 
+}
+
+nav a {
+    text-decoration: none; 
+    font-size: 1.2em;
+    color: var(--text-light); 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    background-color: transparent; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav a:hover {
+    background-color: var(white); 
+    color: var(white); 
+}
+
+nav a {
+    font-family: 'Mooli', sans-serif; /* Mooli font for nav links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Adjust size */
+    color: var(white); /* Use your custom color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@media (min-width: 700px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    nav ul {
+        display: flex; 
+        justify-content: center; 
+    }
+
+    nav li {
+        margin: 0 10px; 
+    }
+}
