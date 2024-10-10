@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     margin: 0;
     padding: 0;
@@ -21,10 +21,11 @@ header {
     color: var(--text-light);
     text-align: center;
     padding: 20px 0;
+    position: relative;
 }
 
 header h1 {
-    font-family: 'Mooli', sans-serif; 
+    font-family: 'Mooli', sans-serif;
     font-size: 2.5em;
     margin: 0;
 }
@@ -43,7 +44,6 @@ header nav a {
 header nav a:hover {
     color: var(--accent-color);
 }
-
 
 .gallery {
     display: grid;
@@ -79,59 +79,120 @@ footer {
     width: 100%;
 }
 
-h2{
+h2 {
     text-align: center;
     font-family: 'Mooli', sans-serif;
 }
 
-
 nav ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 nav a {
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 1.2em;
-    color: var(--text-light); 
-    padding: 10px 15px; 
-    border-radius: 5px; 
-    background-color: transparent; 
-    transition: background-color 0.3s, color 0.3s; 
-}
-
-nav a:hover {
-    background-color: var(white); 
-    color: var(white); 
-}
-
-nav a {
-    font-family: 'Mooli', sans-serif; 
-    text-decoration: none; 
-    font-size: 1.2em; 
-    color: var(white);
+    color: var(--text-light);
     padding: 10px 15px;
     border-radius: 5px;
+    background-color: transparent;
     transition: background-color 0.3s, color 0.3s;
 }
 
-@media (min-width: 700px) {
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.menu-toggle {
+    display: none; 
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr); 
     }
+
     nav ul {
+        flex-direction: column; 
+        align-items: center;
+        display: none; 
+    }
+
+    nav ul.show {
         display: flex; 
-        justify-content: center; 
     }
 
     nav li {
-        margin: 0 10px; 
+        margin: 10px 0; 
+    }
+
+    nav a {
+        font-size: 1.5em; 
+    }
+
+    header {
+        padding: 15px; 
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 }
+
+.hide {
+    display: none;
+}
+
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75); 
+    display: grid;
+    grid-template-rows: auto 1fr;
+    place-items: center;
+    z-index: 10; 
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+}
+
+.viewer.show {
+    opacity: 1; /* Fully visible when .show is added */
+    pointer-events: all; /* Enable interactions */
+}
+
+.viewer img {
+    max-width: 90%;
+    max-height: 90%; 
+    object-fit: contain;
+}
+
