@@ -1,3 +1,4 @@
+
 const toggleButton = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('nav ul');
 
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleResize();
 });
 
+
 function viewerTemplate(imagePath, altText) {
     return `
         <div class="viewer">
@@ -37,6 +39,7 @@ function viewerTemplate(imagePath, altText) {
         </div>
     `;
 }
+
 
 function viewHandler(event) {
     const clickedElement = event.target;
@@ -47,8 +50,21 @@ function viewHandler(event) {
         const fullImageSrc = `${baseImageName}-full.jpeg`;
         document.body.insertAdjacentHTML("afterbegin", viewerTemplate(fullImageSrc, altText));
         const viewer = document.querySelector('.viewer');
-        viewer.classList.add('show'); 
+        viewer.classList.add('show');
         const closeButton = document.querySelector('.close-viewer');
         closeButton.addEventListener('click', closeViewer);
     }
 }
+
+
+function closeViewer() {
+    const viewer = document.querySelector('.viewer');
+    if (viewer) {
+        viewer.classList.remove('show');
+        viewer.remove();  
+    }
+}
+
+
+const gallery = document.querySelector(".gallery");
+gallery.addEventListener("click", viewHandler);
