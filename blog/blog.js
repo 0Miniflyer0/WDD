@@ -1,3 +1,4 @@
+
 const articles = [
 	{
 		id: 1,
@@ -17,11 +18,41 @@ const articles = [
 		date: 'December 12, 2021',
 		description:
 			'The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.',
-		imgSrc:
-			'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300',
+		imgSrc: 'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300',
 		imgAlt: 'Book cover for Magnus Chase 1',
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
 	}
-]
+];
+
+
+const articlesContainer = document.querySelector('#articles-container');
+
+
+articles.forEach((article) => {
+
+  const newArticle = document.createElement('article');
+  newArticle.classList.add('article'); 
+
+
+  const articleHTML = `
+    <div class="article-details">
+      <p>${article.date}</p>
+      <p>Age Range: ${article.ages}</p>
+      <p>Genre: ${article.genre}</p>
+      <p>Rating: ${article.stars}</p>
+    </div>
+    <div class="article-content">
+      <h2>${article.title}</h2>
+      <img src="${article.imgSrc}" alt="${article.imgAlt}">
+      <p>${article.description} <a href="#">Read More...</a></p>
+    </div>
+  `;
+
+
+  newArticle.innerHTML = articleHTML;
+
+
+  articlesContainer.appendChild(newArticle);
+});
