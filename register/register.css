@@ -1,0 +1,19 @@
+.participants-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .participant {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .add-participant-btn {
+    grid-column: span 2;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
