@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recipe Book</title>
+    <meta name="description" content="Discover delicious and easy-to-follow recipes for all occasions with Recipe Book.">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover delicious and easy-to-follow recipes for all occasions with Recipe Book.">
+    <meta property="og:image" content="images/chocolate-chip-cookies.jpg"> 
+    <meta property="og:url" content="https://www.yourwebsite.com"> 
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recipe Book">
+    <meta name="twitter:description" content="Discover delicious and easy-to-follow recipes for all occasions with Recipe Book.">
+    <meta name="twitter:image" content="images/recipe-book.png"> 
+
+
+    <link rel="stylesheet" href="recipes.css">
 </head>
 <body>
-    
+    <header>
+        <img src="images/recipe-book.png" alt="Recipe Book Logo" class="logo">
+        <h1>Recipe Book</h1>
+    </header>
+    <main>
+         <section class="search">
+            <form action="#" method="GET">
+                <label for="search">Search for recipes:</label>
+                <input type="text" id="search" name="search" placeholder="Enter a recipe name">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="recipe">
+            <h2>Chocolate Chip Cookies</h2>
+            <p>A classic recipe for chewy, delicious chocolate chip cookies.</p>
+            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+            <p><strong>Ingredients:</strong> Flour, sugar, butter, chocolate chips.</p>
+            <p><strong>Instructions:</strong> Mix ingredients, bake at 350°F for 12 minutes.</p>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a></p>
+        <div class="social">
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
 </body>
 </html>
