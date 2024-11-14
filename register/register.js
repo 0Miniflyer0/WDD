@@ -9,35 +9,57 @@ document.getElementById("addParticipantBtn").addEventListener("click", () => {
 
 
 function addParticipantSection(count) {
-
-  const participantHTML = `
-    <section class="participant" id="participant${count}">
-      <label for="participantName${count}">Name:</label>
-      <input type="text" id="participantName${count}" name="participantName${count}">
-      
-      <label for="fee${count}">Fee:</label>
-      <input type="number" id="fee${count}" name="fee${count}" min="0">
-    </section>
-  `;
-  
-
+  const participantHTML = participantTemplate(count);
   const addButton = document.getElementById("addParticipantBtn");
   addButton.insertAdjacentHTML("beforebegin", participantHTML);
 }
 
 
+function participantTemplate(count) {
+  return `
+    <section class="participant participant${count}">
+      <p>Participant ${count}</p>
+      <div class="item">
+        <label for="fname${count}"> First Name<span>*</span></label>
+        <input id="fname${count}" type="text" name="fname${count}" required />
+      </div>
+      <div class="item activities">
+        <label for="activity${count}">Activity #<span>*</span></label>
+        <input id="activity${count}" type="text" name="activity${count}" />
+      </div>
+      <div class="item">
+        <label for="fee${count}">Fee ($)<span>*</span></label>
+        <input id="fee${count}" type="number" name="fee${count}" />
+      </div>
+      <div class="item">
+        <label for="date${count}">Desired Date <span>*</span></label>
+        <input id="date${count}" type="date" name="date${count}" />
+      </div>
+      <div class="item">
+        <p>Grade</p>
+        <select name="grade${count}">
+          <option selected value="" disabled></option>
+          <option value="1">1st</option>
+          <option value="2">2nd</option>
+          <!-- Add more grade options here -->
+        </select>
+      </div>
+    </section>
+  `;
+}
+
 document.getElementById("registrationForm").addEventListener("submit", submitForm);
 
-
 function submitForm(event) {
-  event.preventDefault();
-
-
-  const totalFee = totalFees();
-  const adultName = document.getElementById("participantName1").value;
-
+  event.preventDefault();  
+  
+  const totalFee = totalFees(); 
+  const adultName = document.getElementById("adult_name").value;  
+  
 
   document.getElementById("registrationForm").style.display = "none";
+  
+
   const summaryDiv = document.getElementById("summary");
   summaryDiv.classList.remove("hide");
   summaryDiv.innerHTML = successTemplate({
@@ -47,10 +69,10 @@ function submitForm(event) {
   });
 }
 
-// Function to calculate total fees
+
 function totalFees() {
   let feeElements = document.querySelectorAll("[id^=fee]");
-  feeElements = [...feeElements];
+  feeElements = [...feeElements]; 
   return feeElements.reduce((sum, feeElement) => sum + Number(feeElement.value || 0), 0);
 }
 
