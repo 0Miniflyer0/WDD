@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
-<html>
-  <!-- Example based off of https://www.w3docs.com/learn-html/html-form-templates.html -->
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camp Registration</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
@@ -13,13 +13,13 @@
   <body>
     <div class="testbox">
       <h1>Camp Registration</h1>
-      <form>
+      <form id="registrationForm">
         <fieldset class="participants">
           <legend>Participant Information</legend>
           <section class="participant1">
             <p>Participant 1</p>
             <div class="item">
-              <label for="fname"> First Name<span>*</span></label>
+              <label for="fname">First Name<span>*</span></label>
               <input id="fname" type="text" name="fname" value="" required />
             </div>
             <div class="item activities">
@@ -53,7 +53,7 @@
               </select>
             </div>
           </section>
-          <button type="button" id="add">Add Participant</button>
+          <button type="button" id="addParticipantBtn">Add Participant</button>
         </fieldset>
 
         <fieldset>
@@ -127,9 +127,7 @@
                     id="radio_6"
                     name="relationship"
                   />
-                  <label for="radio_6" class="radio"
-                    ><span>Guardian</span></label
-                  >
+                  <label for="radio_6" class="radio"><span>Guardian</span></label>
                 </div>
                 <div>
                   <input
@@ -151,5 +149,6 @@
       </form>
       <section id="summary"></section>
     </div>
+    <script src="register.js"></script>
   </body>
 </html>
