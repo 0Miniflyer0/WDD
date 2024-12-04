@@ -1,0 +1,76 @@
+/* Parent page */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.logo-container {
+    flex: 1;
+    text-align: center;
+}
+
+.main-logo {
+    width: 100px;
+    height: auto;
+}
+
+.title-container {
+    flex: 3;
+    text-align: center;
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.healthy-food-image {
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    border: 2px solid #ccc;
+}
+
+
+.content-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.content-section a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.content-section a:hover {
+    background-color: #218838;
+}
+
+/* Child Page 1 */

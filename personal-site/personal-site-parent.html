@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness and Health</title>
+    <link rel="stylesheet" href="personal-site.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img class="main-logo" src="images/logo.png" alt="Logo">
+        </div>
+        <div class="title-container">
+            <h1>Fitness and Health</h1>
+        </div>
+    </header>
+
+    <section class="image-section">
+        <img class="healthy-food-image" src="images/healthyfood.jpg" alt="Healthy Food">
+    </section>
+
+    <section class="content-section">
+        <p>
+            In 2024, America's Obesity Rate is around 40%. Obesity is a big thing, as it leads to diabetes. 
+            In 2021, Diabetes has been the 8th Leading cause of Death in the United States.
+            I want to cover fitness and health, in order to prevent death from obesity and diabetes.
+        </p>
+        <a href="#" id="nextPageLink">Next Page</a>
+    </section>
+
+    <script>
+        document.getElementById('nextPageLink').addEventListener('click', function (event) {
+            event.preventDefault(); 
+            window.location.href = 'personal-site-child-1.html'; 
+        });
+    </script>
+</body>
+</html>
