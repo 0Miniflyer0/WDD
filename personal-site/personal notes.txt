@@ -1,9 +1,9 @@
 Diets:
 -Keto Diet - Used: https://www.healthline.com/nutrition/ketogenic-diet-101
 -Intermittent Fasting - Used : https://www.healthline.com/nutrition/intermittent-fasting-guide
--Mediterranean DIet
+-Mediterranean DIet - Used: https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/mediterranean-diet
 
 Fitness:
 -High Intensity Interval Trianing - Used: https://www.webmd.com/fitness-exercise/a-z/high-intensity-interval-training-hiit
 -Strength Training - Used: https://www.physio-pedia.com/Strength_Training
--Cardio
+-Cardio - Used: https://www.fyzical.com/lakewoodranch/blog/What-Is-a-Cardiovascular-Exercise
