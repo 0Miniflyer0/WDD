@@ -8,7 +8,7 @@
         <title>Intermittent & Strength</title>
         <link rel="stylesheet" href="personal-site.css">
     </head>
-    <body>
+    <body class="pg3">
         <header class="header">
             <div class="logo-container">
                 <img class="main-logo" src="images/logo.png" alt="Logo">
@@ -49,19 +49,13 @@
             Some exercises you can do with this involve squats, pushups, weightlifting, resistance bands.
         </section>
 
-        <a href="2" id="previousPageLink">Previous Page</a>
+        <div class="center-home-btn">
+            <a href="2" id="previousPageLink">Home</a>
+        </div>
         <script>
             document.getElementById('previousPageLink').addEventListener('click', function (event) {
                 event.preventDefault(); 
-                window.location.href = 'personal-site-child-1.html'; 
-            });
-        </script>
-        
-        <a href="#" id="nextPageLink">Next Page</a>
-        <script>
-            document.getElementById('nextPageLink').addEventListener('click', function (event) {
-                event.preventDefault(); 
-                window.location.href = 'personal-site-child-3.html'; 
+                window.location.href = 'personal-site-parent.html'; 
             });
         </script>
 </body>

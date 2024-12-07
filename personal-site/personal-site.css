@@ -1,8 +1,18 @@
-/* Parent page */
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins&display=swap');
+/* Parent Page Styles */
 
-body {
+:root {
+    --primary-color: black;
+    --secondary-color: gray;
+    --accent1-color: #880808;
+    --accent2-color: #726E6D;
+}
+
+body.pg1 {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    background-color: bisque;
+    color: var(--primary-color); /* Use primary color for text */
 }
 
 .header {
@@ -10,7 +20,7 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: var( --secondary-color); /* Use secondary color for header */
 }
 
 .logo-container {
@@ -21,56 +31,261 @@ body {
 .main-logo {
     width: 100px;
     height: auto;
+    border: 5px solid black;
+    border-radius: 5px;
 }
+
+
+/* Page 1 */
+
+body.pg2 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-color: plum;
+    border: 10px solid gray;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color); /* Secondary color for header */
+    padding: 20px;
+}
+
+
 
 .title-container {
     flex: 3;
     text-align: center;
+    padding: 10px 20px;
 }
 
 .title-container h1 {
     margin: 0;
     font-size: 24px;
-    color: #333;
+    color: var(--primary-color); /* Primary color for text */
+    font-family: 'Agdasima', sans-serif; 
 }
 
-
-.image-section {
+.image-section2, 
+.image-section3 {
     text-align: center;
     margin: 20px 0;
 }
 
-.healthy-food-image {
+.keto-dos, 
+.hi-int {
     width: 80%;
     height: auto;
     max-width: 600px;
-    border: 2px solid #ccc;
+    border: 2px solid var(--secondary-color); /* Secondary color for borders */
+    border-radius: 5px;
 }
 
-
-.content-section {
+.content-section2,
+.content-section3,
+.paragraph {
     text-align: center;
     padding: 20px;
+    margin: 20px 0;
+    
 }
 
-.content-section p {
+.content-section2 p,
+.content-section3 p,
+.paragraph p {
     font-size: 18px;
-    color: #555;
+    color: var(--primary-color);
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif; 
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
-.content-section a {
+.content-link-keto,
+.content-link-ketosis,
+.content-link-HITT,
+.contentlink-HITT-benefits {
+    color: var(--accent1-color); /* Accent color for links */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.content-link-keto:hover,
+.content-link-ketosis:hover,
+.content-link-HITT:hover,
+.contentlink-HITT-benefits:hover {
+    text-decoration: underline;
+}
+
+a#previousPageLink,
+a#nextPageLink {
     display: inline-block;
-    margin-top: 20px;
+    margin: 10px 15px;
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: var(--accent1-color); /* Accent color for buttons */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif; 
 }
 
-.content-section a:hover {
-    background-color: #218838;
+a#previousPageLink:hover,
+a#nextPageLink:hover {
+    background-color: var(--accent2-color); /* Accent color for hover */
 }
 
-/* Child Page 1 - Keto & High Intensity */
+/* Page 2 */
+
+body.pg3 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: azure;
+    border: 10px solid gray;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color); /* Secondary color for header */
+    padding: 20px;
+}
+
+.image-section4,
+.image-section5 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intermittentfasting,
+.strengthimage {
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    border: 2px solid var(--secondary-color); /* Secondary color for borders */
+    border-radius: 5px;
+}
+
+.content-section4,
+.content-section5,
+.paragraph2 {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.content-section4 p,
+.content-section5 p,
+.paragraph2 p {
+    font-size: 18px;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.intermittent-fasting-link,
+.strength-training-link {
+    color: var(--accent1-color); /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intermittent-fasting-link:hover,
+.strength-training-link:hover {
+    text-decoration: underline;
+}
+
+/* Page 3 */
+
+body.pg4 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: aqua;
+    border: 10px solid gray;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color); /* Secondary color for header */
+    padding: 20px;
+}
+
+
+.image-section5,
+.image-section6 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mediterraneandiet,
+.cardioimg {
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    border: 2px solid var(--secondary-color); /* Secondary color for borders */
+    border-radius: 5px;
+}
+
+.content-section6,
+.content-section7,
+.paragraph3,
+.paragraph4,
+.paragraph5 {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.content-section6 p,
+.content-section7 p,
+.paragraph3 p,
+.paragraph4 p,
+.paragraph5 p {
+    font-size: 18px;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.mediterranean-diet-link,
+.cardio-link {
+    color: var(--accent1-color); /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mediterranean-diet-link:hover,
+.cardio-link:hover {
+    text-decoration: underline;
+}
+
+/* Home link button */
+.center-home-btn {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+#previousPageLink {
+    padding: 10px 20px;
+    background-color: var(--accent1-color); /* Accent color for button */
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#previousPageLink:hover {
+    background-color: var(--accent2-color); /* Accent color for hover */
+    cursor: pointer;
+}
