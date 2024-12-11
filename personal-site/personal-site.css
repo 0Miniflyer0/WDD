@@ -12,7 +12,7 @@ body.pg1 {
     margin: 0;
     font-family: 'Poppins', sans-serif; 
     background-color: bisque;
-    color: var(--primary-color); /* Use primary color for text */
+    color: var(--primary-color); 
 }
 
 .header {
@@ -20,7 +20,7 @@ body.pg1 {
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    background-color: var( --secondary-color); /* Use secondary color for header */
+    background-color: var( --secondary-color);
 }
 
 .logo-container {
@@ -41,7 +41,7 @@ body.pg1 {
 body.pg2 {
     margin: 0;
     font-family: 'Poppins', sans-serif; 
-    background-color: plum;
+    background-color: coral;
     border: 10px solid gray;
     border-radius: 5px;
 }
@@ -49,7 +49,7 @@ body.pg2 {
 .header {
     display: flex;
     align-items: center;
-    background-color: var(--secondary-color); /* Secondary color for header */
+    background-color: var(--secondary-color); 
     padding: 20px;
 }
 
@@ -64,7 +64,7 @@ body.pg2 {
 .title-container h1 {
     margin: 0;
     font-size: 24px;
-    color: var(--primary-color); /* Primary color for text */
+    color: var(--primary-color); 
     font-family: 'Agdasima', sans-serif; 
 }
 
@@ -79,7 +79,7 @@ body.pg2 {
     width: 80%;
     height: auto;
     max-width: 600px;
-    border: 2px solid var(--secondary-color); /* Secondary color for borders */
+    border: 2px solid var(--secondary-color); 
     border-radius: 5px;
 }
 
@@ -107,7 +107,7 @@ body.pg2 {
 .content-link-ketosis,
 .content-link-HITT,
 .contentlink-HITT-benefits {
-    color: var(--accent1-color); /* Accent color for links */
+    color: var(--accent1-color); 
     text-decoration: none;
     font-family: 'Poppins', sans-serif; 
 }
@@ -124,7 +124,7 @@ a#nextPageLink {
     display: inline-block;
     margin: 10px 15px;
     padding: 10px 20px;
-    background-color: var(--accent1-color); /* Accent color for buttons */
+    background-color: var(--accent1-color); 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -134,7 +134,7 @@ a#nextPageLink {
 
 a#previousPageLink:hover,
 a#nextPageLink:hover {
-    background-color: var(--accent2-color); /* Accent color for hover */
+    background-color: var(--accent2-color); 
 }
 
 /* Page 2 */
@@ -142,7 +142,7 @@ a#nextPageLink:hover {
 body.pg3 {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: azure;
+    background-color: #A8D5BA;
     border: 10px solid gray;
     border-radius: 5px;
 }
@@ -150,7 +150,7 @@ body.pg3 {
 .header {
     display: flex;
     align-items: center;
-    background-color: var(--secondary-color); /* Secondary color for header */
+    background-color: var(--secondary-color); 
     padding: 20px;
 }
 
@@ -165,7 +165,7 @@ body.pg3 {
     width: 80%;
     height: auto;
     max-width: 600px;
-    border: 2px solid var(--secondary-color); /* Secondary color for borders */
+    border: 2px solid var(--secondary-color); 
     border-radius: 5px;
 }
 
@@ -189,7 +189,7 @@ body.pg3 {
 
 .intermittent-fasting-link,
 .strength-training-link {
-    color: var(--accent1-color); /* Accent color for links */
+    color: var(--accent1-color); 
     text-decoration: none;
     font-weight: bold;
 }
@@ -204,7 +204,7 @@ body.pg3 {
 body.pg4 {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: aqua;
+    background-color: #6A9FB5;
     border: 10px solid gray;
     border-radius: 5px;
 }
@@ -212,7 +212,7 @@ body.pg4 {
 .header {
     display: flex;
     align-items: center;
-    background-color: var(--secondary-color); /* Secondary color for header */
+    background-color: var(--secondary-color); 
     padding: 20px;
 }
 
@@ -228,7 +228,7 @@ body.pg4 {
     width: 80%;
     height: auto;
     max-width: 600px;
-    border: 2px solid var(--secondary-color); /* Secondary color for borders */
+    border: 2px solid var(--secondary-color); 
     border-radius: 5px;
 }
 
@@ -256,7 +256,7 @@ body.pg4 {
 
 .mediterranean-diet-link,
 .cardio-link {
-    color: var(--accent1-color); /* Accent color for links */
+    color: var(--accent1-color); 
     text-decoration: none;
     font-weight: bold;
 }
@@ -277,7 +277,7 @@ body.pg4 {
 
 #previousPageLink {
     padding: 10px 20px;
-    background-color: var(--accent1-color); /* Accent color for button */
+    background-color: var(--accent1-color); 
     color: white; 
     text-decoration: none; 
     border-radius: 5px; 
@@ -286,6 +286,6 @@ body.pg4 {
 }
 
 #previousPageLink:hover {
-    background-color: var(--accent2-color); /* Accent color for hover */
+    background-color: var(--accent2-color); 
     cursor: pointer;
 }
